@@ -1,0 +1,17 @@
+body {
+	background:black;
+
+}
+#wrapper {
+	text-align:center;
+}
+
+img {
+	display:inline;
+}
+#inputField {
+	margin:20px;
+}
+#searchgifs {
+	margin:0px;
+}
