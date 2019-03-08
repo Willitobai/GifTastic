@@ -1,48 +1,58 @@
-<!DOCTYPE html>
-<html>
+<DOCTYPE html>
+    <html>
+      
     <head>
-        <link href='https://fonts.googleapis.com/css?family=Pacifico', rel='stylesheet'/>
-
+      <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet"/>
         <title>template</title>
-        <meta charset='utf-8'>
-        <meta name='viewport' content='width=device-width, initial-scale = 1.0'>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-        <link rel='stylesheet' href='css/animate.css'/>
-        <link rel='stylesheet' href='css/style.css'/>
-        
+            <meta charset='utf-8'>
+            <meta name='viewport' content='width=device-width, initial-scale = 1.0'>
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+            <link rel='stylesheet' href='css/animate.css'/>
+            <link rel='stylesheet' href='css/style.css'/>
     </head>
-    
-<body>
-<!--  <div id='wrapper' class='container m-5'>
-   <input type='text' placeholder='title' />
-   <button type='submit'>click me</button>
- </div> -->
-
-<div class='container-fluid' id='wrapper'>
-
-
-
-  <div id='inputField'>
-    <input id='searchtext' type='text' placeholder='Search..'/>
-    <button id='searchgifs' class='btn btn-success' type='submit' onclick='getData()'>Click</button>
-  </div>
-     <div id='buttonArea'></div>
-     <br/>
-    <div id='inner' class='inner'>
-
-
-    </div>
-
-</div>
-
-
-<script
-  src="https://code.jquery.com/jquery-3.3.1.js"
-  integrity="sha256
-  -2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-  crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-<script src='javascript/app.js'></script>
-</body>
-</html>
+    <body>
+      <div class="container-fluid" id="wrap">
+        <!-- Nav Area with Title 100%-->
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" id="header">
+            <h3 id="title">GISFTASTICAMENTE!</h3>
+          </div>
+        </div>
+        <!-- Button Area 100%    -->
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" id="buttonArea">       </div>
+        </div>
+        <!-- Input Area -->
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-12col-lg-12">
+            <p>Click a button above to load gifs. Or choose your own topic!</p>
+            <form>
+              <fieldset>
+                <label for="topic-input">Add a gif topic</label><br/>
+                <input id="topic-input" type="text" placeholder="Type something…"/>
+                <button class="btn submit" type="submit" data="submitBtn">Submit</button>
+                <p class="instructions">Click the gif to pause & play</p>
+              </fieldset>
+            </form>
+          </div>
+        </div>
+        <!-- Gif Area 12 cols-->
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" id="gifArea">         </div>
+          <!-- Input Area 3 cols-->
+        </div>
+      </div>
+      <!-- Footer-->
+      <footer class="footer">
+        <div class="container"><span class="credits"></span></div>
+      </footer>
+      <script
+      src="https://code.jquery.com/jquery-3.3.1.js"
+      integrity="sha256
+      -2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src='javascript/app.js'></script>
+    </body>
+    </html>
